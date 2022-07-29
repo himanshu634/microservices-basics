@@ -1,0 +1,17 @@
+server:
+  port: 9296
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  profiles:
+    active: native
+
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/himanshu634/config-server
+          clone-on-start: true
+          default-label: main
